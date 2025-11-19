@@ -1,4 +1,5 @@
-const CACHE_NAME = 'ethics-safety-master-v1';
+// Update version number when app changes to force cache refresh
+const CACHE_NAME = 'ethics-safety-master-v2';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -12,6 +13,7 @@ self.addEventListener('install', (event) => {
       return cache.addAll(urlsToCache);
     })
   );
+  // Force the waiting service worker to become the active service worker
   self.skipWaiting();
 });
 
