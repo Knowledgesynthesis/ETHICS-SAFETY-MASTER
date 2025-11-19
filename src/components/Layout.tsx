@@ -30,7 +30,7 @@ export default function Layout() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 py-6 pb-24 md:pb-6">
+      <main className="flex-1 container mx-auto px-4 py-6 pb-24 md:pb-6 md:pl-52">
         <Outlet />
       </main>
 
